@@ -30,11 +30,11 @@ export class Nav extends Component {
 
     render() {
         return (
-<nav className='navbar navbar-dark bg-dark navbar-expand-sm justify-content-between'>
+<nav className='navbar navbar-light bg-light navbar-expand-sm justify-content-between'>
     
 {this.props.login===true?<Redirect to='/'/>:null}
     <div className='pl-4 row'>
-    <Link className='navbar-brand pl-5' to="/">Memes</Link>
+    <Link className='navbar-brand pl-5' to="/">My gallery</Link>
     <form className="form form-inline bg-light rounded" onSubmit={this.handleSearch} style={{overflow:"hidden"}}>
     <DebounceInput
         className='form-control border-0'
