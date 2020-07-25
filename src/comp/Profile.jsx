@@ -28,7 +28,7 @@ export class Profile extends Component {
             this.state.file
         )
         const userid = localStorage.getItem("userid")
-        const {data} = await Axios.post(`https://cors-anywhere.herokuapp.com/http://mygallery-v2.herokuapp.com/addProfile/${userid}`, formData);
+        const {data} = await Axios.post(`https://cors-anywhere.herokuapp.com/https://mygallery-v3.herokuapp.com/addProfile/${userid}`, formData);
         console.log(formData)
         alert("upload done")
         this.props.getPrivate(localStorage.getItem("userid"))

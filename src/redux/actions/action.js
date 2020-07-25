@@ -7,7 +7,7 @@ export const GET_DATA = 'GET_DATA'
 export const UPLOAD_PRIVATE = 'UPLOAD_PRIVATE'
 export const GET_PRIVATE = 'GET_PRIVATE'
 
-const base = "https://cors-anywhere.herokuapp.com/http://mygallery-v2.herokuapp.com"
+const base = "https://cors-anywhere.herokuapp.com/https://mygallery-v3.herokuapp.com"
 export const getData = ()=>async dispatch=>{
     try{
         const {data} = await Axios.get(`${base}/getMyImages`)

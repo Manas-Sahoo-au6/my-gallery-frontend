@@ -25,7 +25,7 @@ export class FormUpload extends Component {
             this.state.file, 
             this.state.file.name 
         )
-        const {data} = await Axios.post("https://cors-anywhere.herokuapp.com/http://mygallery-v2.herokuapp.com/postImage", formData);
+        const {data} = await Axios.post("https://cors-anywhere.herokuapp.com/https://mygallery-v3.herokuapp.com/postImage", formData);
         alert("upload done")
     }; 
     
