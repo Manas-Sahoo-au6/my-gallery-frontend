@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Axios from 'axios'
+import {connect } from 'react-router'
 
 
 export class FormUpload extends Component {
@@ -27,6 +28,7 @@ export class FormUpload extends Component {
         )
         const {data} = await Axios.post("https://cors-anywhere.herokuapp.com/https://mygallery-v3.herokuapp.com/postImage", formData);
         alert("upload done")
+        this.props.getData()
     }; 
     
     render() {
@@ -42,4 +44,9 @@ export class FormUpload extends Component {
     }
 }
 
-export default FormUpload
+const mapDispatchToProps = dispatch=>{
+    return {
+        getData:()=>dispatch(getData())
+    }
+}
+export default connect(null,mapDispatchToProps)(FormUpload)

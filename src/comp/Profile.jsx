@@ -21,7 +21,8 @@ export class Profile extends Component {
     }
       
     handleSubmit = async (e) => { 
-        e.preventDefault();
+        try{
+            e.preventDefault();
         const formData = new FormData()
         formData.append(
             'uploadImage',
@@ -32,6 +33,9 @@ export class Profile extends Component {
         console.log(formData)
         alert("upload done")
         this.props.getPrivate(localStorage.getItem("userid"))
+        }catch(err){
+            console.log(err)
+        }
     }
     render() {
         return (
