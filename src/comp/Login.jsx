@@ -7,7 +7,7 @@ export class Login extends Component {
         super(props)
     
         this.state = {
-            email:"rmanas000@gmail.com",
+            email:"suvinai@gmail.com",
             password:"123456",
         }
     }

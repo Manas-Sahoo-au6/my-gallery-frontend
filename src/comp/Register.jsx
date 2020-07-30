@@ -7,9 +7,9 @@ export class Register extends Component {
         super(props)
     
         this.state = {
-             email:"rmanas000@gmail.com",
+             email:"suvinai@gmail.com",
              password:"123456",
-             name:"manas"
+             name:"suvinaipawa"
         }
     }
     handleChange = (e)=>{
