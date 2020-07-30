@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Axios from 'axios'
 import {connect } from 'react-redux'
-
+import {getData} from '../redux/actions/action'
 
 export class FormUpload extends Component {
     constructor(props) {
