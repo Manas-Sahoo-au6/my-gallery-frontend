@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Axios from 'axios'
-import {connect } from 'react-router'
+import {connect } from 'react-redux'
 
 
 export class FormUpload extends Component {
